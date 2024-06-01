@@ -3,7 +3,7 @@ Metoda Newtona
 Metoda Newtona słóży do znajdowania pierwsiastków równań nieliniowych. Cechuje się szybkością znajdowania rozwiązania gdy początkowe przybliżenie jest wystarczająco blisko pierwiastka. Wymaga ona znajomości funkcji, jej pochodnej oraz początkowego przybliżenia. Metoda jest kwadratowo zbieżna - w każdej iteracji dokładność zostaje podwojona.  
 
 1. Wbór punktu początkowego x0 (zazwyczaj początek lub koniec przedziału lub 0 albo 1)
-2. Wyznaczanie kolejnych przybliżeń ze wzoru x n+1 = xn - ( f(xn) / f'(xn) ). Wzór polega na wyznaczeniu miejsca zerowego pochodnej funkcji wyzaczonej w punkcie i obranie tego miejsca jako nowe przybliżenie. 
+2. Wyznaczanie kolejnych przybliżeń ze wzoru x n+1 = xn - ( f(xn) / f'(xn) ). Wzór polega na wyznaczeniu miejsca zerowego stycznej do funkcji wyzaczonej w punkcie i obranie tego miejsca jako nowe przybliżenie. 
 3. Algorytm może się zakończyć na kilka sposobów
     - Wartość funcji w wyznaczonym punkcie jest dostatecznie bliska zeru ( |f(xk)| <= e )
     - Odległość pomiędzy kolejnymi przybliżeniami jest dostatecznie mała ( |x k+1 - x k| <= e)
