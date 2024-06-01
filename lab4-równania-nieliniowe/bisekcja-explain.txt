@@ -1,0 +1,11 @@
+Metoda Bisekcji:
+
+Metoda bisekcji jest jesdną z najprostrzych i najpewniejszych metod numerycznych do znajdowania rozwiązań równania nieliniowego. Metoda polega na wybraniu przedziału początkowego, w któym występuje miejsce zerowe, dzielenia przedziału na pół i wybraniu podprzedziału w którym występuje miejsce zerowe ( f(start)*f(stop) < 0 ). Jest to powtarzane aż do osiągnięcia odpowiedniej dokładności. 
+
+1. Wybór przedziału początkowego a,b w którym występuje miejsce zerowe
+2. Obliczenie środka przedziału c = (a+b)/2
+3. 
+    - Jeśli f(c) = 0 - zwróć c
+    - Jeśli f(a)*f(c) < 0 - rozwiązanie w przedziale a-c - b=c
+    - Jeśli f(b)*f(c) < 0 - rozwiązanie w przedziale b-c - a=b
+4. Powtarzane kroków 2 i 3 aż do osiągnięcia odpowiedniej dokładności
