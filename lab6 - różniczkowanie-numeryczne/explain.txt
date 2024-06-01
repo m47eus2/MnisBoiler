@@ -1,0 +1,10 @@
+Różniczkowanie numeryczne wykonuje się za pomocą dwóch metod:
+- różnicy dzielonej w przód
+- różnicy centralnej
+
+Z definicji pochodna to lim(h->0) (f(x+h)-f(x)) / h
+Dla dostatecznie małych h pochoddną można przybliżyć wzorem:
+- dla różnicy dzielonej w przód: f'(x) = f(x+h)-f(x) / h + O(h)
+- dla różnicy centralnej: f'(x) = f(x+h)-f(x-h) / 2h + O(h^2)
+
+Metoda różnicy centralnej jest zazwyczaj dokładniejsza, ponieważ wykorzystuje wartości przed jak i po x
