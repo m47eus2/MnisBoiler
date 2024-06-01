@@ -1,0 +1,6 @@
+Interpolacja wielomianowa polega na znalezieniu wzoru wielomianu przechodzącego przez wszystkie dane punkty. 
+Metoda Newtona do interpolacji wykorzystuje różnice dzielone. Umożliwia to przy dodawaniu kolejnego punktu zkorzystać z dotychczasowych obliczeń. 
+1. Danymi wejściowymi są punkty (x0, y0), (x1, x1), (x2, y2)... 
+2. Następnym ktokiem jest rekurencyjne policzenie różnic dzielonych dla każdego węzła, następnie różnic dzielonych wyników otrzymanych wcześniej tak długo aż nie dotrze się do jedego wyniku. 
+3. Wielomian interpolacyjny ma postać:
+P(x) = f[x0] + f[x0+x1](x-x0) + f[x0+x1+x2](x-x0)(x-x1)+...
