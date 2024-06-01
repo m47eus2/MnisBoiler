@@ -1,3 +1,5 @@
+# Suma różnic zaszumionej próbki i średniej niezaszumionej próbki
+
 import matplotlib.pyplot as plt 
 
 sine_with_noise_avg = 0.0
