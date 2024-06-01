@@ -1,0 +1,16 @@
+Całkowanie numeryczne jest używane do obliczenia przybliżonej wartości całki. Używa się go kiedy nie jest możliwe obliczenie całki w sposób analityczny lub kiedy zcałkowania wymaga sygnał dyskretny, np w regulatorze PID. Metody całkowania numerycznego:
+
+- Metoda prostokątów:
+Polega ona na przybliżeniu całki za pomocą sumy pól prostokątów utworzonych pod wykresem funkcji. Dla danego kroku całkowania oblicza się wartość funkcji w początku i końcu przedziału. Następnie mnoży się ich średnią przez szerokość przedziału i sumuje wszystkie powstałe w ten sposób pola. 
+Metoda prostokątów jest łatwa w implementacji oraz wymaga minimalnej ilości obliczeń, jednak może być mało dokładna a jej błąd jest proporcjonalny do szerokości prostokątów. 
+S f(x)dx = (b-a) * f((a+b) / 2)
+
+- Metoda trapezów:
+Polega na przybliżeniu całki funkcją liniową - dla danego kroku obliczana jest wartość na początku oraz na końcu przedziału. Wartości te stanowią podstawy trapezów. Wysokością trapezów jest szerokość obranego przdziału. Tak powstałe pola sumuje się. 
+Metoda trapezów, także jest łatwa w implementacji, daje wyniki dokładniejsze od metody prostokątów - błąd jest proporcjonalny do h^2.
+S f(x)dx = (b-a) * ((f(a)+f(b)) / 2)
+
+
+- Metoda Romberga
+Jest to bardziej zaawansowana metoda całkowania numerycznego. Postaje ona poprzez zastosowanie ekstrapolacji Richardsona na metodzie trapezów. 
+Cechuje się bardzo dużą dokładnością, osiąga wysoką dokładność przy mniejszej liczbie podziałów, jednak jest bardziej skomplikowana w implemetacji oraz ma większe wymagania obliczeniowe. 
