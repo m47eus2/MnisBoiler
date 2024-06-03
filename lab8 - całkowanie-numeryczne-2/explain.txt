@@ -1,0 +1,29 @@
+Całkowanie numeryczne - zaawansowane algorytmy:
+
+- Metoda Monte Carlo
+Polega ona na wylonowaniu n punktów w przedziale całkowania, obliczenia ich średniej a następnie pomnożenie średniej wartości funkcji przez długość przedziału. Czy większa liczba punktów pomiarowych tym bardziej równomierne będzie rozłożenie punktów pomiaowych a tym samym dokładniejszy wynik całki. Należy ostrożnie zwiększać liczbę punktów aby przy dodawaniu nie przektoczyć zakresu używanej zmiennej. Rozwiązaniem tego problemu jest sumowanie wartości funkcji podzielonej już przez ilość punktów, jednak wytedy problemem może okazać się nakładanie zaokrąglenia dzielenia przez n. 
+
+Metoda jest wykorzystywana do obliczania trudnych wielowymiarowych całek, które są trudne do obliczenia za pomocą innych metod numerycznych. Jej misujem jest powolna znieżność - do uzyskania dosładnych wyników wymagana jest duża ilość próbek oraz częściowa losowość wyniku. 
+
+- Metoda adaptacyjna Simpsona
+W metodzie prostokątów oraz trapezów przedział całkowania był dzielony na n przedziałów a każdy przybliżany był funkcją stałą lub liniową. M wetodzie adapracyjnej Simpsona każdy taki przedział jest przybliżany za pomocą funkcji kwadratowej. Następnie przybliżone pole powierzchni pod parabolą można obliczyć za pomocą wzoru:
+S xl-xp dx = [f(xl) + 4f((xl+xp) / 2) + f(xp) ] * h/3
+gdzie h to szerokość przedziału h = (xp - xl)/n
+
+W przypadku kiedy przedział całkowania jest duży można skorzystać ze złożonej metody Simpsona. Przedział dzieli się na n-1 przedziałów (liczba n musi być parzysta) 
+h = (xp-xl) / (n-1)
+Następnie całkę można obliczyć ze wzoru
+[f(x1) + 4f(x2) + 2(x3) + 4(x4) + ... + 2f(xn-2) + 4f(xn-1) + f(xn)] * h/3
+
+Metoda wykorzystywana jest wtedy kiedy zależy nam na dużej dokładności wyniku. Zazwyczaj przy tej samej liczbie przedziałów uzyskujemy większą dokładność niż w metodzie trapezów. Metoda oferuje wysoką dokładność przy umiarkowanej liczbie obliczeń, szczegównie dla gładkich funkcji. 
+
+- Metoda kwadratury Gaussa
+Jest to rozszerzenie metody Monte Carlo. Opiera się ona na sumowanuy wartości funkcji w starannie dobranych punktach nazywanych węzłamim oraz mnożenia ich przez odpowiednie wagi. Węzły i wagi dobrane są tak aby maksymalnie zwiększyć dokładność obliczeń. Przybliżenie całki za pomocą kwadratury Gaussa można przedstawić wzorem
+S a=b f(x) dx = sum(i=1 - n)( wi * f(xi))
+gdzie xi to węzły a wi to specyficzne dla nich wagi. 
+
+Dla standardowej kwadratury Gaussa-Legendrea węzły są korzeniami wielomianów Legendrea a wagi obliczane w sposób który maksymalizuje dokładność dla wielomianó stopnia 2n-1.
+
+Kwadraturę dla przedziału -1, 1 z wagą w(x)=1 nazywa się kwadraturą Gaussa-Legendrea.
+
+Metoda ta jest bardzo dokładna szczególnie dla funkcji które można przybliżyć wielomianami. Wysoką dokładność można uzyskać przy stosunkowo małej liczbie punktów. Jej minusem jest duża złożoność obliczeniowa przez konieczność obliczania węzłów oraz wag. Metoda zoptymalizowana jest dla funkcji gładkich. Metoda jest szeroko wykorzystywana w wielu zastosowaniach inżynieryjnych i naukowych. 
