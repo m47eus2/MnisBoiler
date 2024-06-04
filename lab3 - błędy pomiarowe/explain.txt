@@ -1,0 +1,11 @@
+Błąd bezwzględny:
+Różnica wartości mierzonej i teoretycznej. 
+
+Błąd względny
+Stosunek błędy bezwzględnego do wartości teoretycznej. Wyrażany w procentach. 
+
+Średni błąd bezwzględny:
+Średnia arytmetyczna błędów bezwzględnych
+
+Średni błąd względny:
+Średnia arytmetyczna błędów względnych
