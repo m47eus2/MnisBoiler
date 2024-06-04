@@ -9,3 +9,12 @@ Stosunek błędy bezwzględnego do wartości teoretycznej. Wyrażany w procentac
 
 Średni błąd względny:
 Średnia arytmetyczna błędów względnych
+
+Odchylenie standardowe:
+Miara rozproszenia danych. Określa jak bardzo wartości w zestawie różnią się od średniej arytmetycznej. 
+
+Rozkład błędów wokół średniej:
+Jak błędy pomiarowe rozkładają się wokół średniej wartości tych błędów. 
+
+Błąd średniej atyrmetycznej, błąd średniej:
+Jak bardzo średnia z próby różni się od średniej populacji. 
